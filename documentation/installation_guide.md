@@ -12,3 +12,5 @@
 The blocks should now be available in Gnuradio Companion under **gnuShipping**.
 
 It is necessary to keep the *addressControl.py* and *shippingControl.py* files with the automatically generated *gnuShipping.py* file.
+
+Installation of the [BitArray](https://github.com/ilanschnell/bitarray) library may be necessary if it is not already installed.
