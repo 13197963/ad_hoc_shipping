@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<block>
+  <name>shippingSender</name>
+  <key>gnuShipping_shippingSender</key>
+  <category>[gnuShipping]</category>
+  <import>import gnuShipping</import>
+  <make>gnuShipping.shippingSender($msg_per)</make>
+  <callback>post_message($msg)</callback>
+ 
+  <param>
+  	<name>Message</name>
+  	<key>msg</key>
+  	<value></value>
+  	<type>string</type>
+  </param>
+  <param>
+    <name>Period</name>
+    <key>msg_per</key>
+    <value></value>
+    <type>float</type>
+  </param>
+
+
+  <source>
+    <name>out</name>
+    <type>message</type>
+  </source>
+</block>

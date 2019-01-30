@@ -1,0 +1,30 @@
+INCLUDE(FindPkgConfig)
+PKG_CHECK_MODULES(PC_GNUSHIPPING gnuShipping)
+
+FIND_PATH(
+    GNUSHIPPING_INCLUDE_DIRS
+    NAMES gnuShipping/api.h
+    HINTS $ENV{GNUSHIPPING_DIR}/include
+        ${PC_GNUSHIPPING_INCLUDEDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/include
+          /usr/local/include
+          /usr/include
+)
+
+FIND_LIBRARY(
+    GNUSHIPPING_LIBRARIES
+    NAMES gnuradio-gnuShipping
+    HINTS $ENV{GNUSHIPPING_DIR}/lib
+        ${PC_GNUSHIPPING_LIBDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/lib
+          ${CMAKE_INSTALL_PREFIX}/lib64
+          /usr/local/lib
+          /usr/local/lib64
+          /usr/lib
+          /usr/lib64
+)
+
+INCLUDE(FindPackageHandleStandardArgs)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(GNUSHIPPING DEFAULT_MSG GNUSHIPPING_LIBRARIES GNUSHIPPING_INCLUDE_DIRS)
+MARK_AS_ADVANCED(GNUSHIPPING_LIBRARIES GNUSHIPPING_INCLUDE_DIRS)
+
