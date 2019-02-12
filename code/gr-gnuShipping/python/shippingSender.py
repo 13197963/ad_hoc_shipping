@@ -21,6 +21,7 @@
 import string
 import numpy
 import pmt
+import time
 from bitstring import *
 from addressControl import *
 from shippingControl import *
@@ -38,6 +39,13 @@ class shippingSender(gr.basic_block):
         self.message_port_register_out(pmt.intern('out'))
         self.msg_per = msg_per
 
+        
+
+
+       
+        
+
+
 
     def post_message(self, msg_str):
 
@@ -50,5 +58,10 @@ class shippingSender(gr.basic_block):
             pmt.u8vector_set(send_pmt, i, ord(send_str[i]))
 
         while 1:
-            self.message_port_pub(pmt.intern('out'), pmt.cons(pmt.PMT_NIL, send_pmt))
+            self.message_port_pub(pmt.intern('out'), pmt.cons(pmt.make_dict(), send_pmt))
             time.sleep(self.msg_per)
+
+
+
+
+            

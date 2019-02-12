@@ -10,7 +10,7 @@
     </param>
     <param>
       <key>window_size</key>
-      <value>2000,2000</value>
+      <value>2000, 2000</value>
     </param>
     <param>
       <key>category</key>
@@ -26,7 +26,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -46,7 +46,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>basicTxRx</value>
+      <value>shippingTester1</value>
     </param>
     <param>
       <key>max_nouts</key>
@@ -82,7 +82,7 @@
     </param>
     <param>
       <key>title</key>
-      <value>Shipping Passing App</value>
+      <value>shippingUDPTester</value>
     </param>
     <param>
       <key>placement</key>
@@ -109,7 +109,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -148,11 +148,11 @@
     </param>
     <param>
       <key>value</key>
-      <value>"CSQ305438"</value>
+      <value>AAA000000</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -191,7 +191,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(568, 28)</value>
+      <value>(1064, 44)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -203,7 +203,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>100000</value>
+      <value>10000</value>
     </param>
   </block>
   <block>
@@ -222,7 +222,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -257,11 +257,11 @@
     <key>blocks_repack_bits_bb</key>
     <param>
       <key>k</key>
-      <value>8</value>
+      <value>2</value>
     </param>
     <param>
       <key>l</key>
-      <value>2</value>
+      <value>8</value>
     </param>
     <param>
       <key>alias</key>
@@ -277,7 +277,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>endianness</key>
@@ -285,7 +285,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(608, 107)</value>
+      <value>(440, 212)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -309,18 +309,18 @@
     </param>
     <param>
       <key>align_output</key>
-      <value>False</value>
+      <value>True</value>
     </param>
   </block>
   <block>
     <key>blocks_repack_bits_bb</key>
     <param>
       <key>k</key>
-      <value>2</value>
+      <value>8</value>
     </param>
     <param>
       <key>l</key>
-      <value>8</value>
+      <value>2</value>
     </param>
     <param>
       <key>alias</key>
@@ -336,7 +336,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>endianness</key>
@@ -344,7 +344,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(416, 211)</value>
+      <value>(600, 124)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -368,7 +368,66 @@
     </param>
     <param>
       <key>align_output</key>
+      <value>False</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_socket_pdu</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
       <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(672, 512)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>host</key>
+      <value>localhost</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_socket_pdu_1</value>
+    </param>
+    <param>
+      <key>mtu</key>
+      <value>10000</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>port</key>
+      <value>10000</value>
+    </param>
+    <param>
+      <key>tcp_no_delay</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>"UDP_CLIENT"</value>
     </param>
   </block>
   <block>
@@ -387,7 +446,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -438,7 +497,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -493,11 +552,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(856, 235)</value>
+      <value>(856, 268)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -540,7 +599,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(240, 172)</value>
+      <value>(200, 131)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -583,11 +642,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1056, 240)</value>
+      <value>(1040, 276)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -614,11 +673,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(8, 108)</value>
+      <value>(0, 164)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -646,33 +705,6 @@
     </param>
   </block>
   <block>
-    <key>virtual_source</key>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(72, 372)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>rx_data</value>
-    </param>
-    <param>
-      <key>stream_id</key>
-      <value>QPSK Data</value>
-    </param>
-  </block>
-  <block>
     <key>tutorial_my_qpsk_demod_cb</key>
     <param>
       <key>alias</key>
@@ -688,7 +720,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -723,11 +755,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1088, 132)</value>
+      <value>(1104, 132)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -735,30 +767,63 @@
     </param>
     <param>
       <key>id</key>
-      <value>tx_data</value>
+      <value>virtual_sink_0</value>
     </param>
     <param>
       <key>stream_id</key>
-      <value>QPSK Data</value>
+      <value>stream1</value>
+    </param>
+  </block>
+  <block>
+    <key>virtual_source</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(144, 364)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>virtual_source_0</value>
+    </param>
+    <param>
+      <key>stream_id</key>
+      <value>stream1</value>
     </param>
   </block>
   <connection>
     <source_block_id>blocks_pdu_to_tagged_stream_0</source_block_id>
-    <sink_block_id>blocks_repack_bits_bb_0</sink_block_id>
+    <sink_block_id>blocks_repack_bits_bb_1</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>blocks_repack_bits_bb_0</source_block_id>
-    <sink_block_id>digital_chunks_to_symbols_xx_0</sink_block_id>
+    <sink_block_id>blocks_tagged_stream_to_pdu_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>blocks_repack_bits_bb_1</source_block_id>
-    <sink_block_id>blocks_tagged_stream_to_pdu_0</sink_block_id>
+    <sink_block_id>digital_chunks_to_symbols_xx_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_socket_pdu_1</source_block_id>
+    <sink_block_id>digital_crc32_async_bb_0</sink_block_id>
+    <source_key>pdus</source_key>
+    <sink_key>in</sink_key>
   </connection>
   <connection>
     <source_block_id>blocks_tagged_stream_to_pdu_0</source_block_id>
@@ -768,7 +833,7 @@
   </connection>
   <connection>
     <source_block_id>digital_chunks_to_symbols_xx_0</source_block_id>
-    <sink_block_id>tx_data</sink_block_id>
+    <sink_block_id>virtual_sink_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -785,20 +850,26 @@
     <sink_key>pdus</sink_key>
   </connection>
   <connection>
+    <source_block_id>digital_crc32_async_bb_1</source_block_id>
+    <sink_block_id>blocks_socket_pdu_1</sink_block_id>
+    <source_key>out</source_key>
+    <sink_key>pdus</sink_key>
+  </connection>
+  <connection>
     <source_block_id>gnuShipping_shippingSender_0</source_block_id>
     <sink_block_id>digital_crc32_async_bb_1</sink_block_id>
     <source_key>out</source_key>
     <sink_key>in</sink_key>
   </connection>
   <connection>
-    <source_block_id>rx_data</source_block_id>
-    <sink_block_id>tutorial_my_qpsk_demod_cb_0</sink_block_id>
+    <source_block_id>tutorial_my_qpsk_demod_cb_0</source_block_id>
+    <sink_block_id>blocks_repack_bits_bb_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>tutorial_my_qpsk_demod_cb_0</source_block_id>
-    <sink_block_id>blocks_repack_bits_bb_1</sink_block_id>
+    <source_block_id>virtual_source_0</source_block_id>
+    <sink_block_id>tutorial_my_qpsk_demod_cb_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>

@@ -17,3 +17,11 @@ The final block is the *shippingReciever*. This block takes the beacon messages 
 It is recommended that you use a QT GUI Entry with the shippingSender block at this time, as it relies on a msg callback.
 The system can only be stopped by using `Control+C`, or the "Kill The Flowgraph" option in GnuRadio Companion.
 Having the same value for the senders **Message** and the recievers **ContainerID** will cause the system to ignore your message, as it thinks that its a message from itself.
+
+
+## Tester Usage
+
+
+Run the udpServer.py code first
+
+Run the shippingTester code, ensuring that the udp client port and ip address match that of the udp server

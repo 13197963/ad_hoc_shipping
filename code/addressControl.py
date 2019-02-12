@@ -106,6 +106,7 @@ class nearbyDevice():
 		self.bit_Sound = bit_Sound
 		self.bit_Metal = bit_Metal
 		self.lastSeen = lastSeen
+		
 	def printer(self):
 		print(self.address)
 		print(self.numNeighbours)
